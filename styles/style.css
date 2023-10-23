@@ -1,0 +1,351 @@
+
+/* Color variables */
+:root{
+    --ferrari: #CC0000;
+    --lightRed: #E01111;
+    --darkRed: #641414;
+    --defaultWhite: #F0F8FF;
+    --defaultBlack: #0C0C0F;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../resources/fonts/Montserrat.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Formula';
+    src: url(../resources/fonts/Formula.otf);
+    font-weight: 500;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#particles-js{
+    background-color: #0F0C0C;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    position: fixed;
+}
+
+.logo{
+    width: 150px;
+    height: 60px;
+}
+
+.nav{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.list li{
+    display: inline-block;
+}
+
+.list li a{
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: var(--defaultWhite);
+    margin: 0 10px;
+}
+
+.list li:hover{
+    text-decoration: underline 3px solid var(--lightRed);
+}
+
+#home{
+    margin: 50px;
+    height: 80vh;
+}
+
+.hometitle{
+    font-family: 'Formula';
+    font-size: 4em;
+    color: var(--ferrari);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle{
+    font-family: 'Formula';
+    font-size: 2em;
+    color: var(--defaultWhite);
+    text-align: center;
+}
+
+.tresd{
+    float:right;
+    width: 300px;
+    height: 300px;
+    animation: float 5s infinite alternate;
+}
+
+#we{
+    height: 80vh;
+}
+
+.wetitle{
+    font-family: 'Formula';
+    font-size: 2em;
+    text-align: center;
+    color: var(--ferrari);
+    text-decoration: underline 3px solid var(--lightRed);
+}
+
+.wecontent{
+    width: 90%;
+    margin: 20px auto;
+    font-family: 'Montserrat';
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--defaultWhite);
+}
+
+#services{
+    height: 80vh;
+}
+
+.servicetitle{
+    font-family: 'Formula';
+    font-size: 2em;
+    text-align: center;
+    color: var(--ferrari);
+    text-decoration: underline 3px solid var(--lightRed);
+}
+
+.serviceslist{
+    margin: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.serviceslist li{
+    font-family: 'Montserrat';
+    font-size: 1.5em;
+    color: var(--defaultWhite);
+    margin: 20px 40px;
+}
+
+#order{
+    height: 80vh;
+}
+
+.ordertitle{
+    font-family: 'Formula';
+    font-size: 2em;
+    text-align: center;
+    color: var(--ferrari);
+    text-decoration: underline 3px solid var(--lightRed);
+}
+
+.form{
+    margin: 20px 0;
+    font-family: 'Montserrat';
+}
+
+input, textarea{
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    border: 3px solid var(--defaultWhite);
+    outline: 0;
+    border-radius: 20px;
+    font-family: 'Montserrat';
+    color: var(--lightRed);
+}
+
+.fields{
+    padding: 1rem 3rem;
+    margin: 20px auto;
+    font-size: 1em;
+}
+
+.textarea{
+    margin: 20px auto;
+    font-size: 1em;
+    resize: none;
+    padding: 0.8rem;
+}
+
+.submit{
+    margin: 20px auto;
+    padding: 0.8rem 1rem;
+    font-size: 1em;
+    color: var(--defaultWhite);
+    background-color: var(--lightRed);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.submit:hover{
+    color: var(--lightRed);
+    background-color: var(--defaultWhite);
+}
+
+.fields::placeholder{
+    text-align: start;
+    color: var(--defaultWhite);
+}
+
+.textarea::placeholder{
+    text-align: start;
+    padding: 10px;
+    color: var(--defaultWhite);
+    font-family: 'Montserrat';
+}
+
+#contact{
+    height: 30vh;
+    margin-top: 100px;
+}
+
+.contactitle{
+    font-family: 'Formula';
+    text-align: center;
+    font-size: 2em;
+    color: var(--ferrari);
+    text-decoration: underline 3px solid var(--lightRed);
+}
+
+.contactcontent{
+    text-align: center;
+    font-family: 'Montserrat';
+    color: var(--defaultWhite);
+    margin: 20px;
+}
+
+.ig{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+::selection{
+    background-color: var(--ferrari);
+    color: var(--defaultWhite);
+}
+
+/* Scroll styles */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--defaultBlack); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--darkRed);
+    border-radius: 8px;
+}
+
+/* Animation */
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, -20px);
+    }
+}
+
+/* Responsive design */
+/* Mobile */
+@media screen and (max-width:400px){
+	.nav{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .list li {
+        display: block;
+        margin: 10px 0;
+    }
+    #home{
+        height: auto;
+    }
+    .tresd{
+        display: none;
+    }
+    .hometitle{
+        font-size: 1.8em;
+    }
+    .subtitle{
+        font-size: 1em;
+    }
+    #we{
+        height: auto;
+    }
+    .wetitle{
+        font-size: 1.5em;
+    }
+    .wecontent{
+        font-size: 1em;
+        width: 200px;
+    }
+    #services {
+        height: auto;
+    }
+    .servicetitle {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .serviceslist li {
+        font-size: 1em;
+        text-align: center;
+    }
+    #order{
+        height: auto;
+    }
+    .ordertitle{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .fields, .textarea{
+        width: 200px;
+    }
+    #contac{
+        height: auto;
+    }
+    .contactitle{
+        font-size: 1.5em;
+    }
+    .contactcontent{
+        font-size: 1em;
+        width: 200px;
+        margin: 20px auto;
+    }
+    .ig{
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+/* Mobile animation */
+@media screen and (max-width: 400px) {
+    .tresd {
+        animation: float 5s infinite alternate;
+    }
+    @keyframes float {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(0, -10px);
+        }
+    }
+}

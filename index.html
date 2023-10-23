@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="resources/icon.ico">
+    <!-- Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>CMF 3D</title>
+</head>
+<body>
+
+    <main id="content">
+    <header class="head">
+        <nav class="nav">
+            <img src="resources/logo.svg" class="logo">
+            <ul class="list">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#we">Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#order">Pedidos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <article class="home">
+            <img src="resources/images/3d.svg" class="tresd">
+            <div class="hometxt">
+                <h1 class="hometitle">
+                    Imprimimos tu idea
+                </h1>
+                <p class="subtitle">
+                    Emprendimiento dedicado a la impresión de vehiculos coleccionables a escala en 3d
+                </p>
+            </div>
+        </article>
+    </section>
+    <section id="we">
+        <article class="we">
+            <div class="wetxt">
+                <h3 class="wetitle">
+                    Sobre nosotros
+                </h3>
+                <p class="wecontent" data-aos="fade-up">
+                    Somos un equipo apasionado de tres individuos con un objetivo común: dar vida a la creatividad a través de la tecnología de impresión 3D.
+                    Nuestra historia comenzó con una visión compartida de transformar ideas del mundo automotriz en realidad.
+                    Cada uno de nosotros aporta un conjunto único de habilidades y experiencia en diseño, ingeniería y tecnología necesarias para llevar a cabo las producciones.
+                </p>
+            </div>
+        </article>
+    </section>
+    <section id="services">
+        <article class="services">
+            <h3 class="servicetitle">
+                Servicios
+            </h3>
+            <ul class="serviceslist">
+                <li data-aos="fade-right">Impresión 3d de vehiculos a escala</li>
+                <li data-aos="fade-right">Personalización de vehiculos impresos</li>
+                <li data-aos="fade-right">Impresión de objetos personalizados (consultar)</li>
+                <li data-aos="fade-right">Compra desde nuestro e-commerce (CMF ENGINES)</li>
+            </ul>
+        </article>
+    </section>
+    <section id="order">
+        <article class="order">
+            <h3 class="ordertitle">
+                Solicitar pedido
+            </h3>
+            <form class="form" data-aos="fade-up">
+                <input type="text" class="fields" placeholder="Nombre" id="name">
+                <input type="email" class="fields" placeholder="Email" id="email">
+                <textarea class="textarea" id="text" cols="30" rows="10" placeholder="Pedido y comentarios" a></textarea>
+                <input type="submit" value="Solicitar pedido" class="submit">
+            </form>
+        </article>
+    </section>
+    <footer id="contact">
+        <article class="footer">
+            <h3 class="contactitle">Contacto</h3>
+            <p class="contactcontent">Cualquier consulta contactarse abajo</p>
+            <a href="https://www.instagram.com/cmf_3d/"><img src="resources/instagram.svg" class="ig"></a>
+    </footer>
+    </main>
+
+    <div id="particles-js">
+    </div>
+
+    <!-- Javascript -->
+    <script src="js/particles.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Scroll effect -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
